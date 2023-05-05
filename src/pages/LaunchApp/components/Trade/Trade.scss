@@ -1,0 +1,222 @@
+.trade_route {
+  &-header {
+    > div {
+      width: fit-content;
+      border-radius: 100px;
+      border: 1px solid #e5e5e5;
+      margin: 0 auto;
+      padding: 7.5px 0;
+
+      a {
+        padding: 8px 1em;
+        font-size: 1em;
+        color: #fff;
+
+        &.active {
+          background-color: var(--primary);
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+
+  .swap,
+  .liquidity {
+    display: grid;
+    place-items: center;
+    padding: 2em 0;
+
+    &_wrapper {
+      max-width: 480px;
+      width: 100%;
+      padding: 2rem;
+      border-radius: 10px;
+      background-color: var(--card-bg);
+
+      @media (max-width: 576px) {
+        max-width: 90%;
+      }
+
+      .coins {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        div {
+          display: flex;
+          align-items: center;
+          background-color: #191919;
+          border-radius: 100px;
+          padding: 5px 10px;
+          img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    &_input {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+
+      &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1em;
+
+        &_title {
+          display: flex;
+          align-items: center;
+          gap: 0.75em;
+
+          > label {
+            width: 40px;
+          }
+
+          .logo {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background-color: #232323;
+            border-radius: 100px;
+            padding: 3px 8px;
+            cursor: pointer;
+
+            img {
+              width: 24px;
+              height: 24px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+
+      &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1em;
+        background-color: #232323;
+        padding: 0.5em;
+        border-radius: 5px;
+
+        input {
+          width: 100%;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          font-size: 1em;
+          padding-left: 1em;
+          color: #fff;
+        }
+
+        button {
+          padding: 3px 1em;
+        }
+      }
+    }
+
+    .controls {
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.trade_modal {
+  input {
+    background-color: #232323;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #fff;
+  }
+
+  .list {
+    margin-top: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px 1em;
+    gap: 1em;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #191919;
+    }
+  }
+}
+
+.swap_wrapper-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    width: 100%;
+  }
+}
+
+.settings_modal {
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      cursor: pointer;
+    }
+  }
+  .slippage {
+    padding: 20px 0;
+    > div {
+      display: flex;
+      gap: 5px;
+      margin-top: 20px;
+
+      > p {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 10px;
+        font-size: 16px;
+        background-color: #191919;
+        border-radius: 5px;
+        cursor: pointer;
+        &.active {
+          background-color: var(--primary);
+        }
+      }
+
+      > div {
+        width: 100%;
+        input {
+          height: 40px;
+          border-radius: 5px;
+          background-color: #191919;
+          font-size: 16px;
+          padding: 0 10px;
+          line-height: 40px;
+          outline: none;
+          border: none;
+          color: #fff;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

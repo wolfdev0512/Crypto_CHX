@@ -1,0 +1,40 @@
+.dashboard_form {
+  &-field:last-child {
+    border-bottom: none;
+  }
+
+  &-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid var(--primary);
+
+    label {
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .flex-end {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        padding: 5px 1em;
+      }
+    }
+
+    .announcements_image {
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+}

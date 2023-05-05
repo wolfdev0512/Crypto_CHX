@@ -1,0 +1,64 @@
+.faqs_details {
+  .faqs_header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+
+  form {
+    background-color: #2a2f35;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 3rem;
+  }
+}
+
+.faqs_card_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+
+  .card {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #2a2f35;
+
+    .faqs-card_header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 2rem;
+
+      .icon {
+        padding: 3px 1em;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: #2a2f35;
+        border-radius: 5px;
+        border: 1px solid var(--primary);
+
+        span {
+          font-weight: 600;
+        }
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+}

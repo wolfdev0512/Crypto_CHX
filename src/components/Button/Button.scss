@@ -1,0 +1,42 @@
+%base-styles {
+  outline: none;
+  border: none;
+  padding: 8px 1em;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 250ms linear;
+
+  &:disabled {
+    opacity: 0.75;
+    cursor: no-drop;
+  }
+}
+
+.btn-primary {
+  @extend %base-styles;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-secondary {
+  @extend %base-styles;
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-error {
+  @extend %base-styles;
+  background-color: tomato;
+  color: var(--text-primary);
+  box-shadow: 0px 4px 10px rgba(255, 99, 71, 0.25);
+}
